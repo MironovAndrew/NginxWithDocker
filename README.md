@@ -15,10 +15,10 @@
 8080 - порт сервиса из файла Dockerfile (у всех экземплярах один порт внутри Докера) <br> <br>
 
 
->FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base <br>
-USER $APP_UID <br>
-WORKDIR /app <br>
-EXPOSE 8080 <br>
+<pre>FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
+USER $APP_UID
+WORKDIR /app
+EXPOSE 8080</pre>
 
 #### Посмотреть все контейнеры
 `docker ps`
